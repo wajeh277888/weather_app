@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="331dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:fadingEdge="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteY="40dp"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="@dimen/cards_widths"
+        android:layout_height="@dimen/cards_heights"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="112dp"
+        android:elevation="@dimen/elevation"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/degree1"
+            android:layout_width="@dimen/card_image_width"
+            android:layout_height="@dimen/card_image_height"
+            android:layout_margin="@dimen/card_image_margin"
+            android:textSize="@dimen/degree_size" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/card_image_width"
+            android:layout_height="@dimen/card_image_height"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/card_image_margin"
+            app:srcCompat="@drawable/ic_baseline_cloud_queue_24" />
+
+        <TextView
+            android:id="@+id/city1"
+            android:layout_width="@dimen/city_width"
+            android:layout_height="@dimen/city_height"
+            android:layout_marginLeft="@dimen/card_image_margin"
+            android:layout_marginTop="@dimen/city_name_top_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+        <TextView
+            android:id="@+id/state1"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_marginLeft="@dimen/card_image_margin"
+            android:layout_marginTop="@dimen/state_name_top_margin"
+            android:text="USA"
+            android:textSize="@dimen/city_text_size" />
+
+        <ImageView
+            android:id="@+id/water1"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/card_image_margin"
+            app:srcCompat="@drawable/drop" />
+
+        <TextView
+            android:id="@+id/water_text1"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/detail_left_margin"
+            android:layout_marginTop="@dimen/card_image_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+        <ImageView
+            android:id="@+id/air1"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/sec_detail_image_left_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            app:srcCompat="@drawable/wind" />
+
+        <TextView
+            android:id="@+id/air_text1"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom |right"
+            android:layout_marginTop="@dimen/card_image_margin"
+            android:layout_marginRight="@dimen/sec_detail_right_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="@dimen/cards_widths"
+        android:layout_height="@dimen/cards_heights"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="44dp"
+        android:elevation="@dimen/elevation"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/degree2"
+            android:layout_width="@dimen/card_image_width"
+            android:layout_height="@dimen/card_image_height"
+            android:layout_margin="@dimen/card_image_margin"
+            android:textSize="@dimen/degree_size" />
+
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="@dimen/card_image_width"
+            android:layout_height="@dimen/card_image_height"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/card_image_margin"
+            app:srcCompat="@drawable/rain" />
+
+        <TextView
+            android:id="@+id/city2"
+            android:layout_width="@dimen/city_width"
+            android:layout_height="@dimen/city_height"
+            android:layout_marginLeft="@dimen/card_image_margin"
+            android:layout_marginTop="@dimen/city_name_top_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+        <TextView
+            android:id="@+id/state2"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_marginLeft="@dimen/card_image_margin"
+            android:layout_marginTop="@dimen/state_name_top_margin"
+            android:text="USA"
+            android:textSize="@dimen/city_text_size" />
+
+        <ImageView
+            android:id="@+id/water2"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/card_image_margin"
+            app:srcCompat="@drawable/drop" />
+
+        <TextView
+            android:id="@+id/water_text2"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/detail_left_margin"
+            android:layout_marginTop="@dimen/card_image_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+        <ImageView
+            android:id="@+id/air2"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/sec_detail_image_left_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            app:srcCompat="@drawable/wind" />
+
+        <TextView
+            android:id="@+id/air_text2"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom |right"
+            android:layout_marginRight="@dimen/sec_detail_right_margin"
+            android:layout_marginTop="@dimen/card_image_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/cards_widths"
+        android:layout_height="@dimen/cards_heights"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="112dp"
+        android:elevation="@dimen/elevation"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/degree3"
+            android:layout_width="@dimen/card_image_width"
+            android:layout_height="@dimen/card_image_height"
+            android:layout_margin="@dimen/card_image_margin"
+            android:text="22"
+            android:textSize="@dimen/degree_size" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/card_image_width"
+            android:layout_height="@dimen/card_image_height"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/card_image_margin"
+            app:srcCompat="@drawable/ic_baseline_wb_sunny_24" />
+
+        <TextView
+            android:id="@+id/city3"
+            android:layout_width="@dimen/city_width"
+            android:layout_height="@dimen/city_height"
+            android:layout_marginLeft="@dimen/card_image_margin"
+            android:layout_marginTop="@dimen/city_name_top_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+        <TextView
+            android:id="@+id/state3"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_marginLeft="@dimen/card_image_margin"
+            android:layout_marginTop="@dimen/state_name_top_margin"
+            android:text="USA"
+            android:textSize="@dimen/city_text_size" />
+
+        <ImageView
+            android:id="@+id/water3"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/card_image_margin"
+            app:srcCompat="@drawable/drop" />
+
+        <TextView
+            android:id="@+id/water_text3"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/detail_left_margin"
+            android:layout_marginTop="@dimen/card_image_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+        <ImageView
+            android:id="@+id/air3"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/sec_detail_image_left_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            app:srcCompat="@drawable/wind" />
+
+        <TextView
+            android:id="@+id/air_text3"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom |right"
+            android:layout_marginTop="@dimen/card_image_margin"
+            android:layout_marginRight="@dimen/sec_detail_right_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="@dimen/cards_widths"
+        android:layout_height="@dimen/cards_heights"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="44dp"
+        android:elevation="@dimen/elevation"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cardView6"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/degree4"
+            android:layout_width="@dimen/card_image_width"
+            android:layout_height="@dimen/card_image_height"
+            android:layout_margin="@dimen/card_image_margin"
+            android:textSize="@dimen/degree_size" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="@dimen/card_image_width"
+            android:layout_height="@dimen/card_image_height"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/card_image_margin"
+            app:srcCompat="@drawable/rain" />
+
+        <TextView
+            android:id="@+id/city4"
+            android:layout_width="@dimen/city_width"
+            android:layout_height="@dimen/city_height"
+            android:layout_marginLeft="@dimen/card_image_margin"
+            android:layout_marginTop="@dimen/city_name_top_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+        <TextView
+            android:id="@+id/state4"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_marginLeft="@dimen/card_image_margin"
+            android:layout_marginTop="@dimen/state_name_top_margin"
+            android:text="USA"
+            android:textSize="@dimen/city_text_size" />
+
+        <ImageView
+            android:id="@+id/water4"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/card_image_margin"
+            app:srcCompat="@drawable/drop" />
+
+        <TextView
+            android:id="@+id/water_text4"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/detail_left_margin"
+            android:layout_marginTop="@dimen/card_image_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+        <ImageView
+            android:id="@+id/air4"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/sec_detail_image_left_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            app:srcCompat="@drawable/wind" />
+
+        <TextView
+            android:id="@+id/air_text4"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom |right"
+            android:layout_marginRight="@dimen/sec_detail_right_margin"
+            android:layout_marginTop="@dimen/card_image_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="@dimen/cards_widths"
+        android:layout_height="@dimen/cards_heights"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="44dp"
+        android:elevation="@dimen/elevation"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/degree5"
+            android:layout_width="@dimen/card_image_width"
+            android:layout_height="@dimen/card_image_height"
+            android:layout_margin="@dimen/card_image_margin"
+            android:textSize="@dimen/degree_size" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="@dimen/card_image_width"
+            android:layout_height="@dimen/card_image_height"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/card_image_margin"
+            app:srcCompat="@drawable/sun_partially_covered_by_a_cloud" />
+
+        <TextView
+            android:id="@+id/city5"
+            android:layout_width="@dimen/city_width"
+            android:layout_height="@dimen/city_height"
+            android:layout_marginLeft="@dimen/card_image_margin"
+            android:layout_marginTop="@dimen/city_name_top_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+        <TextView
+            android:id="@+id/state5"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_marginLeft="@dimen/card_image_margin"
+            android:layout_marginTop="@dimen/state_name_top_margin"
+            android:text="USA"
+            android:textSize="@dimen/city_text_size" />
+
+        <ImageView
+            android:id="@+id/water5"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/card_image_margin"
+            app:srcCompat="@drawable/drop" />
+
+        <TextView
+            android:id="@+id/water_text5"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/detail_left_margin"
+            android:layout_marginTop="@dimen/card_image_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+        <ImageView
+            android:id="@+id/air5"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/sec_detail_image_left_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            app:srcCompat="@drawable/wind" />
+
+        <TextView
+            android:id="@+id/air_text5"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom |right"
+            android:layout_marginRight="@dimen/sec_detail_right_margin"
+            android:layout_marginTop="@dimen/card_image_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="@dimen/cards_widths"
+        android:layout_height="@dimen/cards_heights"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="44dp"
+        android:elevation="@dimen/elevation"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/degree6"
+            android:layout_width="@dimen/card_image_width"
+            android:layout_height="@dimen/card_image_height"
+            android:layout_margin="@dimen/card_image_margin"
+            android:textSize="@dimen/degree_size" />
+
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="@dimen/card_image_width"
+            android:layout_height="@dimen/card_image_height"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/card_image_margin"
+            app:srcCompat="@drawable/humidity" />
+
+        <TextView
+            android:id="@+id/city6"
+            android:layout_width="@dimen/city_width"
+            android:layout_height="@dimen/city_height"
+            android:layout_marginLeft="@dimen/card_image_margin"
+            android:layout_marginTop="@dimen/city_name_top_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+        <TextView
+            android:id="@+id/state6"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_marginLeft="@dimen/card_image_margin"
+            android:layout_marginTop="@dimen/state_name_top_margin"
+            android:text="USA"
+            android:textSize="@dimen/city_text_size" />
+
+        <ImageView
+            android:id="@+id/water6"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/card_image_margin"
+            app:srcCompat="@drawable/drop" />
+
+        <TextView
+            android:id="@+id/water_text6"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/detail_left_margin"
+            android:layout_marginTop="@dimen/card_image_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+        <ImageView
+            android:id="@+id/air6"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/sec_detail_image_left_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            app:srcCompat="@drawable/wind" />
+
+        <TextView
+            android:id="@+id/air_text6"
+            android:layout_width="@dimen/state_width"
+            android:layout_height="@dimen/state_detail_height"
+            android:layout_gravity="bottom |right"
+            android:layout_marginRight="@dimen/sec_detail_right_margin"
+            android:layout_marginTop="@dimen/card_image_margin"
+            android:layout_marginBottom="@dimen/card_image_margin"
+            android:text="TextView"
+            android:textSize="@dimen/city_text_size" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
